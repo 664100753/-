@@ -1,0 +1,25 @@
+//引入文件
+@import "base";
+@import "index";
+@import "variable";
+
+
+
+//设置字体的样式
+/*字体px处理*/
+.font_dpr(@font-size: 16px) {
+  font-size: @font-size;
+
+  [data-dpr="2"] & {
+    font-size: @font-size * 2;
+  }
+  [data-dpr="3"] & {
+    font-size: @font-size * 3;
+  }
+}
+
+/*使用方法，元素调用这个混入函数*/
+//body{
+//  .font_dpr(14px);
+//}
+

@@ -1,0 +1,110 @@
+//首页整体容器
+
+html,body {
+  height: 100%;
+}
+.mm_container {
+  width: 100%;
+  height: 1000px;
+  max-width: 750px;
+  min-width: 320px;
+  background-color: pink;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 98rem/@base;
+}
+//头部区域
+.mm_header {
+  width: 100%;
+  height: 98rem/@base;
+  background-color: @mmColor;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  max-width: 750px;
+
+  a {
+    display: block;
+    height: 100%;
+
+  }
+  .mm_left {
+    position: absolute;
+    top: 25rem/@base;
+    left: 35rem/@base;
+
+    img {
+      width: 375rem/@base;
+      height: 50rem/@base;
+
+    }
+  }
+
+  .mm_right {
+   position: absolute;
+    top: 15rem/@base;
+    right: 25rem/@base;
+    img{
+      width: 68rem/@base;
+      height: 68rem/@base;
+    }
+  }
+}
+//底部区域
+.mm_footer {
+  width: 100%;
+  height: 245rem/@base;
+  background-color: #F7F7F7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  ul {
+    padding-top: 55rem/@base;
+  }
+
+  li:first-child,
+  li:nth-child(2),
+  li:last-child {
+    border: 1px solid #ccc;
+    border-left: none;
+    width: 33.3%;
+    height: 67rem/@base;
+    text-align: center;
+    line-height: 67rem/@base;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  li:last-child img {
+    display: inline-block;
+    width: 30rem/@base;
+    height: 30rem/@base;
+    vertical-align: text-top;
+  }
+
+  .load {
+    text-align: center;
+    margin-top: 10rem/@base;
+
+
+ }
+
+  .passTop a:first-child  {
+    color: red;
+  }
+
+  .passTop {
+    padding-top: 40rem/@base;
+    text-align: center;
+  }
+
+}
+
+//搜索区域
+.mm_search {
+  height: 105rem/@base;
+  width: 100%;
+  background-color: lime;
+}
